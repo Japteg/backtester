@@ -1,0 +1,22 @@
+from types import SimpleNamespace
+
+INSTRUMENTS = SimpleNamespace(**{
+    'BANKNIFTY': 'BANKNIFTY',
+    'NIFTY': 'NIFTY'
+})
+
+STRIKE_OFFSET = {
+    INSTRUMENTS.BANKNIFTY: 100,
+    INSTRUMENTS.NIFTY: 50,
+}
+
+LOT_SIZE = {
+    INSTRUMENTS.BANKNIFTY: 25,
+    INSTRUMENTS.NIFTY: 50
+}
+
+# Per lot
+MAX_SL_PTS = {
+    INSTRUMENTS.BANKNIFTY: 100,
+    INSTRUMENTS.NIFTY: 50
+}
